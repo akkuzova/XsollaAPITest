@@ -1,3 +1,4 @@
 vendor/
 tests/_bootstrap.php
+test/_output
 .idea/
