@@ -1,0 +1,11 @@
+class_name: ApiTester
+modules:
+    enabled:
+        - \Helper\Api
+        - REST:
+            url: https://api.xsolla.com
+            depends: PhpBrowser
+            part: Json
+        - JsonSchema
+
+

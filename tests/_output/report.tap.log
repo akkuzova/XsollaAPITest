@@ -1,0 +1,52 @@
+TAP version 13
+ok 1 - authenticate and try to get promotion of next merchant (AuthenticateCest::tryToAuthAndGetPromotionOfNextMerchant)
+ok 2 - try to get promotions without auth (AuthenticateCest::tryToGetPromotionsWithoutAuth)
+ok 3 - create new promotion with project_id = _ (CreatePromotionCest::tryToCreatePromotionWithBadProjectId)
+ok 4 - create new promotion with technical_name = '      '' (CreatePromotionCest::tryToCreatePromotionWithBadTechnicalName)
+ok 5 - create new promotion without label/name/descr/ (CreatePromotionCest::tryToCreatePromotionWithoutParameter)
+not ok 6 - Failure: create new promotion with null technical_name (CreatePromotionCest::tryToCreatePromotionWithNullParameter)
+  ---
+  message: 'Failed asserting that 201 matches expected 422.'
+  severity: fail
+  ...
+not ok 6 - Failure: create new promotion with null label (CreatePromotionCest::tryToCreatePromotionWithNullParameter)
+  ---
+  message: 'Failed asserting that 201 matches expected 422.'
+  severity: fail
+  ...
+not ok 6 - Failure: create new promotion with null name (CreatePromotionCest::tryToCreatePromotionWithNullParameter)
+  ---
+  message: 'Failed asserting that 201 matches expected 422.'
+  severity: fail
+  ...
+not ok 6 - Failure: create new promotion with null descr (CreatePromotionCest::tryToCreatePromotionWithNullParameter)
+  ---
+  message: 'Failed asserting that 201 matches expected 422.'
+  severity: fail
+  ...
+ok 7 - get promotion with id 3293 of merchant (GetPromotionCest::getExistPromotion)
+ok 8 - get promotion with id _ (GetPromotionCest::getPromotionWithBadId)
+ok 9 - get promotion with empty id of merchant (GetPromotionCest::getPromotionWithEmptyIdOfMerchant)
+ok 10 - update with project_id = _ (UpdatePromotionCest::tryToUpdatePromotionWithBadProjectId)
+ok 11 - update promotion with technical_name = '      '' (UpdatePromotionCest::tryToUpdatePromotionWithBadTechnicalName)
+not ok 12 - Failure: update promotion with null label (UpdatePromotionCest::tryToUpdatePromotionWithNullParameter)
+  ---
+  message: 'Failed asserting that 204 matches expected 422.'
+  severity: fail
+  ...
+not ok 12 - Failure: update promotion with null name (UpdatePromotionCest::tryToUpdatePromotionWithNullParameter)
+  ---
+  message: 'Failed asserting that 204 matches expected 422.'
+  severity: fail
+  ...
+not ok 12 - Failure: update promotion with null descr (UpdatePromotionCest::tryToUpdatePromotionWithNullParameter)
+  ---
+  message: 'Failed asserting that 204 matches expected 422.'
+  severity: fail
+  ...
+ok 13 - delete nonexistent promotion (DeletePromotionCept)
+ok 14 - get all promotions of merchant (ListAllPromotionsCept)
+ok 15 - review promotion (PromotionUseCaseCept)
+ok 16 - review promotion (ReviewThePromotionCept)
+ok 17 -  (UpdatePromotionCept)
+1..17

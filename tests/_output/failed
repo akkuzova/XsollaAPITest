@@ -1,0 +1,7 @@
+tests/api//CreatePromotionCest.php:tryToCreatePromotionWithNullParameter
+tests/api//CreatePromotionCest.php:tryToCreatePromotionWithNullParameter
+tests/api//CreatePromotionCest.php:tryToCreatePromotionWithNullParameter
+tests/api//CreatePromotionCest.php:tryToCreatePromotionWithNullParameter
+tests/api//UpdatePromotionCest.php:tryToUpdatePromotionWithNullParameter
+tests/api//UpdatePromotionCest.php:tryToUpdatePromotionWithNullParameter
+tests/api//UpdatePromotionCest.php:tryToUpdatePromotionWithNullParameter
